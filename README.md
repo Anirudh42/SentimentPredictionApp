@@ -13,7 +13,8 @@
 5. Basically you would need write```@app.route("/")``` and add all your code inside functions under these decorators
 6. For this applicaion, since it uses Docker we will be creating a Docker file
 7. Each line of the Docker file is same as executing a line on your command prompt/terminal. Comments have been provided inside the Docker file explaining each line.
-8. Execute the following lines to build the docker image and run it locally. Skip this step if you do not want to test it on your local machine
+8. To run the Flask app type ```python app.py``` and then you should get a link http://0.0.0.0:8080/ that you can open in your browser.
+9. Execute the following lines to build the docker image and run it locally. Skip this step if you do not want to test it on your local machine
     ```
     docker build -t "your_image_name_here" .
     docker run -d -p host_port:container_port "name_of_your_running_container"
