@@ -21,7 +21,7 @@
     ```
 8. Deploying using AWS Elastic Beanstalk
     - Create an AWS account for yourself, it is free. You will be charged once you deploy your app and cross the free tier limit for you account.
-    - Follow this tutorial here to install the ````eb cli```` client 
+    - Follow this tutorial here https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-install.html to install the ````eb cli```` client 
     - Once the ````eb cli```` is installed run the following commands as shown below.
     - I have selected all the default options, feel free to choose your own.
 
