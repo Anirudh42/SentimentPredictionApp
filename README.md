@@ -10,9 +10,10 @@
 2. Train and save your Machine Learning Model. I used ````pickle```` to save it but you may use other formats as well
 3. Once you saved your models it is time to choose your backend web framework. I have chosen Flask for this application
 4. You can use the same structure for your code as well and replace my code with yours. Just keep the overall template(function definitions and other imports) as it is.
-5. For this applicaion, since it uses Docker we will be creating a Docker file
-6. Each line of the Docker file is same as executing a line on your command prompt/terminal. Comments have been provided inside the Docker file explaining each line.
-7. Execute the following lines to build the docker image and run it locally. Skip this step if you do not want to test it on your local machine
+5. Basically you would need write```@app.route("/")``` and add all your code inside functions under these decorators
+6. For this applicaion, since it uses Docker we will be creating a Docker file
+7. Each line of the Docker file is same as executing a line on your command prompt/terminal. Comments have been provided inside the Docker file explaining each line.
+8. Execute the following lines to build the docker image and run it locally. Skip this step if you do not want to test it on your local machine
     ```
     docker build -t "your_image_name_here" .
     docker run -d -p host_port:container_port "name_of_your_running_container"
@@ -74,10 +75,10 @@ Select a keypair.
 1) [ Create new KeyPair ]
 (default is 1): 1
 
-eb create YOUR_ENV
+eb create name_you_environment_here
 
 ```
-### Congrats you have deployed your very own Sentiment Analysis App!
+# Congrats you have deployed your very own Sentiment Analysis App!
 
 #### Regarding the ****ml_model**** folder, I have trained a simple Machine Learning Model to classify the Sentiment of IMDb reviews downloaded from the Kaggle website and saved the vectorizer and also the model as pickle files to be used for prediction
 
