@@ -2,7 +2,7 @@
 
 ### This is one kind of a general framework for you to follow in order to deploy your machine learning model into production either using AWS, GCP, Azure or any other cloud tech of your choice. The process would remain similar
 
-### This repo uses Docker, Flask and AWS to deploy the application.
+# This repo uses Docker, Flask and AWS to deploy the application.
 
 ## Steps:
 
