@@ -19,6 +19,7 @@
     docker run -d -p host_port:container_port "name_of_your_running_container"
     ```
 8. Deploying using AWS Elastic Beanstalk
+    - Create an AWS account for yourself, it is free. You will be charged once you deploy your app and cross the free tier limit for you account.
     - Follow this tutorial here to install the ````eb cli```` client 
     - Once the ````eb cli```` is installed run the following commands as shown below.
     - I have selected all the default options, feel free to choose your own.
