@@ -30,7 +30,7 @@
 
 
 ```
-eb init
+$ eb init
 
 Select a default region
 1) us-east-1 : US East (N. Virginia)
@@ -55,8 +55,8 @@ Select an application to use
 (default is 1): 1
 
 Enter Application Name
-(default is "Elastic-Beanstalk-Docker-Flask"): YOUR_APP
-Application YOUR_APP has been created.
+(default is "Elastic-Beanstalk-Docker-Flask"): your_app_name_here
+Application your_app_name_here has been created.
 
 It appears you are using Docker. Is this correct?
 (Y/n): Y
@@ -80,7 +80,7 @@ Select a keypair.
 1) [ Create new KeyPair ]
 (default is 1): 1
 
-eb create name_you_environment_here
+$ eb create name_you_environment_here
 
 ```
 
