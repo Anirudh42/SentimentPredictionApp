@@ -27,7 +27,8 @@
     - I have selected all the default options, feel free to choose your own.
 
 12. It will take a couple of minutes and then you should see a URL link to your app that is deployed on AWS
-```
+
+````
 eb init
 
 Select a default region
@@ -80,7 +81,7 @@ Select a keypair.
 
 eb create name_you_environment_here
 
-```
+````
 # Congrats you have deployed your very own Sentiment Analysis App!
 
 #### Regarding the ****ml_model**** folder, I have trained a simple Machine Learning Model to classify the Sentiment of IMDb reviews downloaded from the Kaggle website and saved the vectorizer and also the model as pickle files to be used for prediction
