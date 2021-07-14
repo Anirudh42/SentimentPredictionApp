@@ -14,18 +14,19 @@
 6. For this applicaion, since it uses Docker we will be creating a Docker file
 7. Each line of the Docker file is same as executing a line on your command prompt/terminal. Comments have been provided inside the Docker file explaining each line.
 8. To run the Flask app type ```python app.py``` and then you should get a link http://0.0.0.0:8080/ that you can open in your browser.
-9. Execute the following lines to build the docker image and run it locally. Skip this step if you do not want to test it on your local machine
+9. To run the ML model and obtain the predictions navigate to http://0.0.0.0:8080/train_predict and hit refresh to see a new result each time 
+10. Execute the following lines to build the docker image and run it locally. Skip this step if you do not want to test it on your local machine
     ```
     docker build -t "your_image_name_here" .
     docker run -d -p host_port:container_port "name_of_your_running_container"
     ```
-8. Deploying using AWS Elastic Beanstalk
+11. Deploying using AWS Elastic Beanstalk
     - Create an AWS account for yourself, it is free. You will be charged once you deploy your app and cross the free tier limit for you account.
     - Follow this tutorial here https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-install.html to install the ````eb cli```` client 
     - Once the ````eb cli```` is installed run the following commands as shown below.
     - I have selected all the default options, feel free to choose your own.
 
-9. It will take a couple of minutes and then you should see a URL link to your app that is deployed on AWS
+12. It will take a couple of minutes and then you should see a URL link to your app that is deployed on AWS
 ```
 eb init
 
