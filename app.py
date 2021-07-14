@@ -6,6 +6,7 @@ import numpy as np
 #Test comment
 print("Loading the data...")
 #Load data
+#In general it is good to provide a basic input form using HTML and then use that input to make predictions
 df_train = pd.read_csv("data/Train.csv")
 df_test = pd.read_csv("data/Test.csv")
 #my test comment
@@ -32,10 +33,17 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
+    '''This is the default landing page'''
+    
     return "This is a very basic Sentiment Analysis App, with no UI!\n Head over to /train_predict to see some results..."
 
 @app.route("/train_predict")
 def predict_train():
+    '''
+    This function will take a random input from the test dataset located in the /data/ folder and predict the sentiment as positive or negative
+    The function is called each time a GET request is sent to the "/train_predict" page
+    The output of this function is returned to the page and shown as a JSON
+    '''
     sample = np.random.randint(len(all_predictions_train))
     prediction = all_predictions_train[sample]
     text = cleaned_text_train[sample]
